@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+    <title>Cars</title>
+</head>
+<body>
+    <ul class="nav nav-pills nav-fill" style="margin-bottom: 5px; background-color: #fcbe03;">
+        <li class="nav-item col-lg-12">
+          <a class="nav-link " aria-current="page" href="Index.html" style="color: black ">მთავარი</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">მწარმოებელი</th>
+                    <th scope="col">მოდელი</th>
+                    <th scope="col">ფასი</th>
+                  </tr>
+                </thead>
+            </table>
+        </div>
+
+            <div class="col-lg-6">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 500px; margin: auto;">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/amg.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/g37.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/srt.jpg" class="d-block w-100" >
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+           
+        </div>
+
+     <div> 
+        <h2>
+          დაამატეთ მანქანა
+        </h2>
+        <input class="form-control" type="text" placeholder="მწარმოებელი" aria-label="default input example">
+        <input class="form-control" type="text" placeholder="მოდელი" aria-label="default input example">
+        <input class="form-control" type="text" placeholder="ფასი" aria-label="default input example">
+        <button class="btn btn-primary" type="button" id="submit">დამატება</button>
+      </div>
+
+    </br>
+
+      <div>
+        <h2>
+          წაშალეთ მანქანა
+        </h2>
+        <input class="form-control" type="text" placeholder="მწარმოებელი" aria-label="default input example">
+        <button class="btn btn-primary" type="button" id="delete">წაშლა</button>
+      </div>
+
+    </div>
+
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
